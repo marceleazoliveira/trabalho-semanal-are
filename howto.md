@@ -197,6 +197,19 @@ Coeficientes aprendidos:
 Intercepto:
 [42.78552581]
 ```
+
+A execução do arquivo `main.py` gera um dataset enriquecido com a coluna `grau_risco_rede`, calculada a partir das regras Prolog.
+
+Essa coluna representa o grau de proximidade entre cada cliente e a pessoa inadimplente da rede.
+
+Em seguida, o programa treina uma regressão logística utilizando:
+
+- renda mensal;
+- score clássico;
+- grau de risco da rede.
+
+Ao final, são exibidos os coeficientes aprendidos pelo modelo estatístico e o intercepto da regressão.
+
 # Análise Crítica e XAI
 
 O projeto utiliza uma abordagem híbrida entre lógica simbólica em Prolog e aprendizado estatístico em Python.
